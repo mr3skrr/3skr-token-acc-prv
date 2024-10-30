@@ -1,3 +1,4 @@
 Flask
 requests
 urllib3
+pycryptodome
