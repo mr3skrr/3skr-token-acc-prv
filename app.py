@@ -61,10 +61,10 @@ def TOKEN_MAKE(ACCESS_TOKEN, OPEN_ID, UID):
         return BASE64_TOKEN
     return None
 
-@app.route('/password/token', methods=['POST'])
+@app.route('/password/UID', methods=['POST'])
 def api_get_token(password, token):
     data = request.json
-    UID = data.get("UID")
+    UID = data.get("token")
     if not UID:
         return jsonify({"error": "Missing UID"}), 400
     token_result = get_token(password, UID)
