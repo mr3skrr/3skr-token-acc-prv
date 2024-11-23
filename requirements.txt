@@ -1,4 +1,2 @@
-Flask
-requests
-urllib3
-pycryptodome
+
+ههههههههههههههههههههههههههه
